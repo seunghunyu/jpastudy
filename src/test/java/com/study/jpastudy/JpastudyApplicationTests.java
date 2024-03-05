@@ -10,4 +10,10 @@ class JpastudyApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void joinTest(){
+
+	}
+
+
 }

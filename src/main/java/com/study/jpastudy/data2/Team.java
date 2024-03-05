@@ -3,7 +3,6 @@ package com.study.jpastudy.data2;
 import jakarta.persistence.*;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
-import org.springframework.lang.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +19,7 @@ public class Team {
     private String name;
 
     @OneToMany(mappedBy = "team")
-    private List<Member> members = new ArrayList<>();
+    private List<TMember> members = new ArrayList<>();
 
 
 }
