@@ -1,11 +1,19 @@
 package com.study.jpastudy.data;
 
+import com.study.jpastudy.data2.TMember;
 import jakarta.persistence.*;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
 @Table(name = "MEMBER")
+@Getter
+@Setter
 public class Member {
 
     @Id @GeneratedValue
@@ -17,5 +25,9 @@ public class Member {
     private String city;
     private String street;
     private String zipcode;
+
+
+    @OneToMany(mappedBy = "member")
+    private List<Orders> orders = new ArrayList<>();
 
 }

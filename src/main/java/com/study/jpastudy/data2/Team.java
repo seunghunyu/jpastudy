@@ -1,10 +1,7 @@
 package com.study.jpastudy.data2;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
+import lombok.*;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.springframework.lang.Nullable;
 
@@ -14,9 +11,10 @@ import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 @Entity
 @Table(name = "TEAM")
+@Getter
+@Setter
 public class Team {
     @Id
     @Column(name = "TEAM_ID")
@@ -32,4 +30,12 @@ public class Team {
         this.id = id;
         this.name = name;
     }
+
+   public void addMember(TMember member){
+        this.members.add(member);
+        if(member.getTeam() != this){
+            member.setTeam(this);
+        }
+   }
+
 }

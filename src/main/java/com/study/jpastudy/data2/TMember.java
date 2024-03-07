@@ -1,14 +1,14 @@
 package com.study.jpastudy.data2;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+@AllArgsConstructor
 @NoArgsConstructor
-@Data
 @Entity
 @Table(name = "T_MEMBER")
+@Getter
+@Setter
 public class TMember {
 
     @Id
@@ -24,5 +24,12 @@ public class TMember {
     public TMember(String id, String username) {
         this.id = id;
         this.username = username;
+    }
+
+    public void setTeam(Team team){
+        this.team = team;
+        if(!team.getMembers().contains(this)){
+            team.getMembers().add(this);
+        }
     }
 }
