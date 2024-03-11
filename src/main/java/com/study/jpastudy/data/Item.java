@@ -9,10 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@NoArgsConstructor
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "DTYPE")
 @Getter
 @Setter
-public class Item {
+public abstract class Item {
     @Id @GeneratedValue
     @Column(name ="ITEM_ID")
     private Long id;
@@ -21,6 +22,7 @@ public class Item {
     private int price;
     private int stockQuantity;
 
-
+    @ManyToMany(mappedBy = "items")
+    List<Category> categories = new ArrayList<>();
 
 }

@@ -1,8 +1,5 @@
-package com.study.jpastudy.ex7_5;
+package com.study.jpastudy.ex7.ex7_5;
 
-import jakarta.persistence.AttributeOverride;
-import jakarta.persistence.AttributeOverrides;
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 
 @Entity
@@ -11,6 +8,6 @@ import jakarta.persistence.Entity;
 //        @AttributeOverride(name="id", column = @Column(name = "MEMBER_ID")),
 //        @AttributeOverride(name="name", column = @Column(name = "MEMBER_NAME"))
 //})
-public class Member extends BaseEntity{
+public class Member7_5 extends BaseEntity{
     private String email;
 }

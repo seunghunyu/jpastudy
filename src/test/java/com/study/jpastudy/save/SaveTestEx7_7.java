@@ -1,30 +1,31 @@
 package com.study.jpastudy.save;
 
-import com.study.jpastudy.ex7.ex7_6.Parent;
-import com.study.jpastudy.ex7.ex7_6.ParentId;
+import com.study.jpastudy.ex7.ex7_7.ParentEm;
+import com.study.jpastudy.ex7.ex7_7.ParentEmId;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+
 @Slf4j
 @SpringBootTest
-public class SaveTestEx7_6 {
+public class SaveTestEx7_7 {
     @PersistenceContext
     EntityManager em;
 
     @Transactional
     @Test
     void testSave() {
-        Parent parent = new Parent();
-        parent.setId1("myId1");
-        parent.setId2("myId2");
-        parent.setName("parentName");
-        em.persist(parent);
+        ParentEm parentEm = new ParentEm();
+        ParentEmId parentEmId = new ParentEmId("myId1","myId2");
+        parentEm.setId(parentEmId);
+        parentEm.setName("parentName");
+        em.persist(parentEm);
 
-        ParentId parentId = new ParentId("myId1","myId2");
-        Parent findParent = em.find(Parent.class, parentId);
+        ParentEmId parentEmId2 = new ParentEmId("myId1","myId2");
+        ParentEm findParent = em.find(ParentEm.class, parentEmId);
         log.info("findParentName =  {}" , findParent.getName());
 
     }

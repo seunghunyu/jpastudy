@@ -1,4 +1,4 @@
-package com.study.jpastudy.ex7_5;
+package com.study.jpastudy.ex7.ex7_5;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
