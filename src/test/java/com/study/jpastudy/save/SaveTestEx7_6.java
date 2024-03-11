@@ -1,7 +1,7 @@
 package com.study.jpastudy.save;
 
-import com.study.jpastudy.ex7.ex7_6.Parent;
-import com.study.jpastudy.ex7.ex7_6.ParentId;
+import com.study.jpastudy.chapter7.ex7_6.Parent;
+import com.study.jpastudy.chapter7.ex7_6.ParentId;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
