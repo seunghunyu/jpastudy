@@ -1,9 +1,7 @@
-package com.study.jpastudy.data2;
+package com.study.jpastudy.chapter8.data2;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.antlr.v4.runtime.misc.NotNull;
-import org.springframework.lang.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;

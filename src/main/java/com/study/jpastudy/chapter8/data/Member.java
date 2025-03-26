@@ -1,6 +1,5 @@
-package com.study.jpastudy.data;
+package com.study.jpastudy.chapter8.data;
 
-import com.study.jpastudy.data2.TMember;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

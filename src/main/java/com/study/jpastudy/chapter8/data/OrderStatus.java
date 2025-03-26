@@ -1,4 +1,4 @@
-package com.study.jpastudy.data;
+package com.study.jpastudy.chapter8.data;
 
 public enum OrderStatus {
     ORDER,CANCEL

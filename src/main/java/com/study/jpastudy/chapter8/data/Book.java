@@ -1,4 +1,4 @@
-package com.study.jpastudy.data;
+package com.study.jpastudy.chapter8.data;
 
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;

@@ -1,4 +1,4 @@
-package com.study.jpastudy.data2;
+package com.study.jpastudy.chapter8.data2;
 
 import jakarta.persistence.*;
 import lombok.*;
