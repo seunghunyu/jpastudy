@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+    <persistence-unit name="jpabook">
+        <class>com.study.jpastudy.chapter2.Member</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <!--<property name="javax.persistence.jdbc.url" value="jdbc:h2:~/test "/> -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test "/>
+            <!--현재 사용할 데이터베이스의 방언을 선택한다. 이 부분만 바꾸면 자바코드를 바꾸지 않아도 다른 회사의 DB를 쓸 수 있다.-->
+<!--            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/> -->
+
+            <!--옵션, 이지만 JPA가 어떤 SQL을 만들어내는지 보고 싶으면 넣자.-->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
+            <property name="hibernate.id.new_generator_mappings" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
