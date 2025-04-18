@@ -1,6 +1,6 @@
 package com.study.jpastudy;
 
-import com.study.jpastudy.chapter2.Member;
+import com.study.jpastudy.chapter4.Member;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import java.util.List;
 
 //@SpringBootApplication
-@EntityScan(basePackages = "com.study.jpastudy.chapter2")
+@EntityScan(basePackages = "com.study.jpastudy.chapter4")
 public class JpastudyApplication {
 
 	public static void main(String[] args) {
@@ -57,7 +57,19 @@ public class JpastudyApplication {
 		List<Member> members
 				= em.createQuery("select m from Member m", Member.class).getResultList();
 		System.out.println("members.size=" + members.size());
-		em.remove(member);
+
+		//em.remove(member);
+
+
+		id = "id2";
+		Member member2 = new Member();
+		member2.setId(id);
+		member2.setUsername("승훈2");
+		member2.setAge(22);
+
+		//등록
+		em.persist(member2);
+
 	}
 
 
