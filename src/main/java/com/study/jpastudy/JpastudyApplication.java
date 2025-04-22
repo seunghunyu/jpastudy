@@ -1,6 +1,7 @@
 package com.study.jpastudy;
 
 import com.study.jpastudy.chapter4.Member;
+import com.study.jpastudy.chapter5.Team;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
@@ -71,6 +72,5 @@ public class JpastudyApplication {
 		em.persist(member2);
 
 	}
-
 
 }
