@@ -4,12 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Embeddable;
 import java.io.Serializable;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class ParentId implements Serializable {
+@Embeddable
+public class ParentId2 implements Serializable {
     private String id1;
     private String id2;
 }
