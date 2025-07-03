@@ -21,3 +21,29 @@
 2.연관 필드 : 연관관계를 위한 필드, 임베디드 타입 포함(필드 or 프로퍼티)
 - 단일 값 연관 필드 : @ManyToOne, @OneToOne, 대상이 엔티티
 - 컬렉션 값 연관 필드 : @OneToMany, @ManyToMany, 대상이 컬렉션
+
+
+#단일 값 연관 필드로 경로 탐색을 하면 SQL 에서 내부 조인이 일어나는데 이것을 묵시적 조인이라 한다.
+참고로 묵시적 조인은 모두 내부 조인이며 외부 조인은 명시적으로 JOIN키워드를 사용해야한다.
+- 명시적 조인
+select m FROM Member m JOIN m.team t
+- 묵시적 조인
+select m.team FROM Member m
+
+#컬렉션은 컬렉션의 크기를 구할 수 있는 size라는 특별한 기능 사용 가능
+size를 사용하면 COUNT 함수로 변환
+select t.members.size from Team t
+
+
+#JPQL도 SQL처럼 서브 쿼리를 지원하지만 WHERE, HAVING 절에서만 사용 가느앟고 SELECT, FROM 절에서는 사용 불가
+
+#ALL | ANY | SOME
+- ALL 모든 조건을 만족하면 참
+ex)select o from Order o where o.orderAmount > ALL (select p.stockAmount from Product p)
+(전체 상품 각각의 재고보다 수문량이 많은 주문들)
+- ANY , SOME 같은 의미, 조건을 하나라도 만족하면 참
+ex)select m from Member m where m.team = ANY (select t from Team t)
+(어떤 팀이든 팀에 소속된 회원)
+
+
+
