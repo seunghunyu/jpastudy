@@ -7,7 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-@Embeddable
+//@Embeddable
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

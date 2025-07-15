@@ -6,7 +6,7 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import java.util.Date;
 
-@Entity
+//@Entity
 @DynamicUpdate
 @DynamicInsert
 @Table(name = "ORDERS")

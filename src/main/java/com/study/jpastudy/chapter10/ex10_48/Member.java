@@ -7,7 +7,7 @@ import jakarta.persistence.NamedQuery;
 import javax.persistence.EntityManager;
 import java.util.List;
 
-@Entity
+//@Entity
 //@NamedQuery(
 //        name= "Member.findByUsername",
 //        query = "select m from Member m where m.username = :username"

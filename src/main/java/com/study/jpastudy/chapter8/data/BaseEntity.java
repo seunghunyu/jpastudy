@@ -6,7 +6,7 @@ import lombok.Setter;
 
 import java.util.Date;
 
-@MappedSuperclass
+//@MappedSuperclass
 @Getter
 @Setter
 public class BaseEntity {

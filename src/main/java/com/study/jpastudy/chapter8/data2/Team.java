@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Entity
-@Table(name = "TEAM")
-@Getter
-@Setter
+//@AllArgsConstructor
+//@NoArgsConstructor
+//@Entity
+//@Table(name = "TEAM")
+//@Getter
+//@Setter
 public class Team {
     @Id
     @Column(name = "TEAM_ID")

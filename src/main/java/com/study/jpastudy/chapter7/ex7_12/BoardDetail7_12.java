@@ -2,7 +2,7 @@ package com.study.jpastudy.chapter7.ex7_12;
 
 import jakarta.persistence.*;
 
-@Entity
+//@Entity
 public class BoardDetail7_12 {
     @Id
     private Long boardId;

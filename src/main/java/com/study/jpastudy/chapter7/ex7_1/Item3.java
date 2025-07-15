@@ -2,7 +2,7 @@ package com.study.jpastudy.chapter7.ex7_1;
 
 import jakarta.persistence.*;
 
-@Entity
+//@Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS) //구현 클래스 마다 테이블 전략
 @DiscriminatorColumn(name = "DTYPE")
 public abstract class Item3 {

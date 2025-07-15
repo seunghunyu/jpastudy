@@ -6,7 +6,7 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import java.util.Date;
 
-@Entity
+//@Entity
 @DynamicUpdate   // 기본적인 Entity 수정은 모든 컬럼을 업데이트 하기 때문에 컬럼이 30개가 넘어가면 수정된 컬러만 업데이트되도록 사용
 @DynamicInsert   // Field 가 빈 값인 애들을 제외하고 Insert 처리
 @Table(name = "MEMBER")

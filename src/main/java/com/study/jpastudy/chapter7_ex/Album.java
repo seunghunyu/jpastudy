@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
-@Entity
+//@Entity
 @DiscriminatorValue("A")
 public class Album {
     private String artist;

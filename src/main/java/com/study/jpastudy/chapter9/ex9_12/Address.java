@@ -5,7 +5,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.Embedded;
 
-@Embeddable
+//@Embeddable
 public class Address {
     @Column
     String city;

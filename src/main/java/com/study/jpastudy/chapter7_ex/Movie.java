@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
-@Entity
+//@Entity
 @DiscriminatorValue("B")
 public class Movie {
     private String director;

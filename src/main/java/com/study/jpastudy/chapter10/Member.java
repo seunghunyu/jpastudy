@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Entity
+//@Entity
 public class Member {
     @Id @GeneratedValue
     private Long id;

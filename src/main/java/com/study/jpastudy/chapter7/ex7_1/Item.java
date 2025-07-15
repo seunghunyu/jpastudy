@@ -2,7 +2,7 @@ package com.study.jpastudy.chapter7.ex7_1;
 
 import jakarta.persistence.*;
 
-@Entity
+//@Entity
 @Inheritance(strategy = InheritanceType.JOINED) //상속매핑은 부모클래스에 @Inheritance 사용, 매핑 전략 지정 여기선 조인
 @DiscriminatorColumn(name = "DTYPE") //부모 클래스에 구분 컬럼을 지정 이 컬럼으로 지정된 자식 테이블을 구분 할 수 있음.
 public abstract class Item {

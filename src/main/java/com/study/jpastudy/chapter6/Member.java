@@ -7,7 +7,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
+//@Entity
 @Table(name = "MEMBER")
 public class Member {
     @Id

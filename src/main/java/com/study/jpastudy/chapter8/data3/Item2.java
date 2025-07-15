@@ -15,7 +15,7 @@ import jakarta.persistence.*;
     (설정하지 않으면 기본으로 엔티티 이름을 사용한다. (Movie, Book..)
 
  */
-@Entity
+//@Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public abstract class Item2 {
 

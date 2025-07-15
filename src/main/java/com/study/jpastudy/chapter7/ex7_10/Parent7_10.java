@@ -4,7 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity
+//@Entity
 public class Parent7_10 {
     @Id @Column(name = "PARENT_ID")
     private String id;

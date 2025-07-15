@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Embeddable
+//@Embeddable
 public class ChildId7_10 implements Serializable {
     private String parentId; //@MapId("parentId")로 맵핑
     private String parent;

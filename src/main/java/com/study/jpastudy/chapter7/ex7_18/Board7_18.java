@@ -2,7 +2,7 @@ package com.study.jpastudy.chapter7.ex7_18;
 
 import jakarta.persistence.*;
 
-@Entity
+//@Entity
 @Table(name = "BOARD7_18")
 @SecondaryTable(name = "BOARD_DETAIL7_18", pkJoinColumns = @PrimaryKeyJoinColumn(name = "BOARD_DETAIL_ID")) /* 추가로 맵핑할 테이블 이름과 해당 테이블의 기본키 명을 적어준다.*/
 /**

@@ -2,7 +2,7 @@ package com.study.jpastudy.chapter7.ex7_6;
 
 import jakarta.persistence.*;
 
-@Entity
+//@Entity
 public class Child {
     @Id
     private String id;

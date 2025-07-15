@@ -5,7 +5,7 @@ import jakarta.persistence.Table;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
-@Entity
+//@Entity
 @DynamicUpdate
 @DynamicInsert
 @Table(name = "CATEGORY_ITEM")

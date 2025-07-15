@@ -1,0 +1,5 @@
+과거 메서드 (QueryDSL 4.x 이하)	대체 메서드 (5.0.0 이상)	반환 타입	    설명
+list()	                                fetch()	        List<T>	        결과 목록 전체
+uniqueResult()	                        fetchOne()	    T 또는 null	    정확히 1건 반환. 없으면 null, 2건 이상이면 예외
+singleResult()	                        fetchFirst()  	T 또는 null	    결과 중 첫 번째 한 건만 반환. 2건 이상이어도 예외 없음
+

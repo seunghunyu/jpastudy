@@ -4,7 +4,7 @@ import com.study.jpastudy.chapter6.Member;
 import com.study.jpastudy.chapter6.Product;
 import jakarta.persistence.*;
 
-@Entity
+//@Entity
 public class Order {
     @Id @GeneratedValue
     @Column(name = "ORDER_ID")

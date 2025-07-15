@@ -8,7 +8,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
+//@Entity
 @NoArgsConstructor
 @Table(name = "MEMBER")
 @Getter

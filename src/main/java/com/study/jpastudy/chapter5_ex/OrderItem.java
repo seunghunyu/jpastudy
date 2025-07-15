@@ -9,7 +9,7 @@ import org.hibernate.annotations.DynamicUpdate;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
+//@Entity
 @DynamicUpdate
 @DynamicInsert
 @Getter @Setter

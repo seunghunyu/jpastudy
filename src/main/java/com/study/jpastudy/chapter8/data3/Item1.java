@@ -13,7 +13,7 @@ import jakarta.persistence.*;
  * - 조회 쿼리가 복잡하다.
  * - 데이터를 등록할 INSERT SQL을 두 번 실행한다.
  */
-@Entity
+//@Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "DTYPE")
 public abstract class Item1 {

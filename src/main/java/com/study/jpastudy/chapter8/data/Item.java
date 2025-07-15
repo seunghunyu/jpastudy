@@ -7,7 +7,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
+//@Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "DTYPE")
 @Getter

@@ -11,7 +11,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Embeddable
+//@Embeddable
 public class ParentEmId implements Serializable {
     @Column(name = "PARENT_ID1")
     private String id1;

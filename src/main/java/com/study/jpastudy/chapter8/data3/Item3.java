@@ -15,7 +15,7 @@ import jakarta.persistence.*;
  *  - 데이터베이스 설계자와 ORM 전문가 둘 다 추천하지 않는 전략(조인이나 단일 테이플 전략을 쓸 것)
  */
 
-@Entity
+//@Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public abstract class Item3 {
     @Id

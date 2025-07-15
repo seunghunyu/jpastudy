@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
+//@Entity
 @IdClass(GrandChildId7_9.class)
 @NoArgsConstructor
 @AllArgsConstructor

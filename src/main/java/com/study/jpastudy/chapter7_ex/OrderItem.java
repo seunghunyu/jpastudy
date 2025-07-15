@@ -6,7 +6,7 @@ import lombok.Setter;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
-@Entity
+//@Entity
 @DynamicUpdate
 @DynamicInsert
 @Getter @Setter

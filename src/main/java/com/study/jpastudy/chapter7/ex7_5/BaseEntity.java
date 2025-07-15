@@ -11,7 +11,7 @@ import jakarta.persistence.MappedSuperclass;
  * ORM에서 이야기하는 진정한 상속 매핑은 이전에 학습한 객체 상속을 데이터베이스의 슈퍼타입 서브타입 관계와 매핑하는 것이다.
  * !! @Entity는 @Entity이거나 @MappedSuperclass로 지정한 클래스만 상속받을 수 있다.
  */
-@MappedSuperclass
+//@MappedSuperclass
 public class BaseEntity {
     @Id
     @GeneratedValue

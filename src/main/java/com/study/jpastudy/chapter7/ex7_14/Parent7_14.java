@@ -2,7 +2,7 @@ package com.study.jpastudy.chapter7.ex7_14;
 
 import jakarta.persistence.*;
 
-@Entity
+//@Entity
 public class Parent7_14 {
     @Id @GeneratedValue
     @Column(name = "PARENT_ID")

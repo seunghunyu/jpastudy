@@ -2,7 +2,7 @@ package com.study.jpastudy.chapter6;
 
 import jakarta.persistence.*;
 
-@Entity
+//@Entity
 public class Order {
     @Id @GeneratedValue
     @Column(name = "ORDER_ID")

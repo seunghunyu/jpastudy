@@ -2,7 +2,7 @@ package com.study.jpastudy.chapter5;
 
 import jakarta.persistence.*;
 
-@Entity
+//@Entity
 @Table(name = "MEMBER")
 public class Member {
     @Id
