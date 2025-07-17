@@ -47,3 +47,6 @@ ex)select m from Member m where m.team = ANY (select t from Team t)
 
 
 
+
+
+
